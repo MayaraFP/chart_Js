@@ -56,12 +56,21 @@
   new Chart(cotx, {
     type: 'bar',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
       datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1
-      }]
+        label: 'Temperatura Média',
+        data: [22, 24, 27, 23, 20, 18],
+        borderWidth: 2,
+        backgroundColor: 'pink',
+        borderColor: 'pink'
+      },{
+        label: 'Umidade Média',
+        data: [90, 89, 93, 87, 88, 82],
+        borderWidth: 2,
+        backgroundColor: 'blue',
+        borderColor: 'blue'
+      }
+        ]
     },
     options: {
       scales: {
